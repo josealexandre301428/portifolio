@@ -11,10 +11,10 @@ import './App.css';
 class App extends React.Component {
   render() {
     function MouseOver({target}) {
-      target.style.color="rgb(19, 216, 216)";
+      target.style.color="white";
     }
     function MouseOut({target}){
-      target.style.color="white";
+      target.style.color="black";
     }
     return (
       <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -25,7 +25,7 @@ class App extends React.Component {
               <div className="navi">
               <Link
                 to="/"
-                style={{ textDecoration: 'none', color: 'white' }}
+                style={{ textDecoration: 'none', color: 'black' }}
                 onMouseOver={MouseOver} 
                 onMouseOut={MouseOut}
               >
@@ -33,7 +33,7 @@ class App extends React.Component {
               </Link>
               <Link
                 to="/habilidades"
-                style={{ textDecoration: 'none', color: 'white' }}
+                style={{ textDecoration: 'none', color: 'black' }}
                 onMouseOver={MouseOver} 
                 onMouseOut={MouseOut}
               >
@@ -41,7 +41,7 @@ class App extends React.Component {
               </Link>
               <Link
                 to="/projetos"
-                style={{ textDecoration: 'none', color: 'white' }}
+                style={{ textDecoration: 'none', color: 'black' }}
                 onMouseOver={MouseOver} 
                 onMouseOut={MouseOut}
               >

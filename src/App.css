@@ -14,14 +14,14 @@ body {
 .header {
   text-align: center;
   border: 1px solid black;
-  color: rgb(253, 253, 253);
-  background-color: rgb(72, 151, 151);
+  color: rgb(255, 253, 253);
+  background-color: #293536;
   text-decoration: none;
 }
 
 .navi {
   padding: 5px;
-  background-color: rgb(97, 112, 107);
+  background-color: #8BB4B5;
   border-top: 1px solid black;
   display: flex;
   justify-content: space-around;
@@ -40,14 +40,14 @@ body {
   align-items: center;
   margin-top: 50px;
   max-width: 80%;
-  border: 2px solid rgb(12, 93, 124);
+  border: 2px solid #293536;
   border-radius: 15px;
-  background-color: rgb(75, 205, 205);
-  color: rgb(10, 61, 109);
+  background-color: #8BB4B5;
+  color: 293536;
 }
 
 #fotoPrincipal {
-  border: 2px solid rgb(90, 176, 193);
+  border: 2px solid #293536;
 }
 
 .homeContainer p{
@@ -57,6 +57,7 @@ body {
 
 .homeContainer hr{
   width: 50%;
+  border: 1px solid #293536;
 }
 
 .home img{
@@ -106,7 +107,7 @@ body {
   margin: 0 auto;
   border: 2px solid black;
   border-radius: 15px;
-  background-color: rgb(75, 205, 205);
+  background-color: #8BB4B5;
 }
 
 footer{
