@@ -1,25 +1,68 @@
-import logo from './logo.svg';
+import { BrowserRouter } from 'react-router-dom';
+import { Route, Routes, Link } from 'react-router-dom';
+import React from 'react';
+import Habilidades from './pages/Habilidades';
+import Projetos from './pages/Projetos';
+import Home from './pages/Home';
+import NotFoud from './pages/NotFoud';
+import Footer from './footer';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    function MouseOver({target}) {
+      target.style.color="rgb(19, 216, 216)";
+    }
+    function MouseOut({target}){
+      target.style.color="white";
+    }
+    return (
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <section>
+          <div>
+            <header className="header">
+              <h1 id="title">Meu Portfólio</h1>
+              <div className="navi">
+              <Link
+                to="/"
+                style={{ textDecoration: 'none', color: 'white' }}
+                onMouseOver={MouseOver} 
+                onMouseOut={MouseOut}
+              >
+                Perfil
+              </Link>
+              <Link
+                to="/habilidades"
+                style={{ textDecoration: 'none', color: 'white' }}
+                onMouseOver={MouseOver} 
+                onMouseOut={MouseOut}
+              >
+                Habilidades
+              </Link>
+              <Link
+                to="/projetos"
+                style={{ textDecoration: 'none', color: 'white' }}
+                onMouseOver={MouseOver} 
+                onMouseOut={MouseOut}
+              >
+                Projetos
+              </Link>
+              </div>
+            </header>
+          </div>
+          <main className='main'>
+            <Routes>
+              <Route path="/habilidades" element={ <Habilidades /> } />
+              <Route path="/projetos" element={ <Projetos /> } />
+              <Route exact path="/" element={ <Home /> } />
+              <Route path="*" element={ <NotFoud /> } />
+            </Routes>
+          </main>
+          <Footer />
+        </section>   
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;

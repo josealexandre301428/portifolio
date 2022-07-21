@@ -1,38 +1,114 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;500;600&display=swap');
+
+*{
+  font-family: 'Advent Pro', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(212, 212, 212);
+  font-family:  'Open Sans Condensed', sans-serif;;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+.header {
   text-align: center;
+  border: 1px solid black;
+  color: rgb(253, 253, 253);
+  background-color: rgb(72, 151, 151);
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navi {
+  padding: 5px;
+  background-color: rgb(97, 112, 107);
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-around;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.homeContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  max-width: 80%;
+  border: 2px solid rgb(12, 93, 124);
+  border-radius: 15px;
+  background-color: rgb(75, 205, 205);
+  color: rgb(10, 61, 109);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#fotoPrincipal {
+  border: 2px solid rgb(90, 176, 193);
+}
+
+.homeContainer p{
+  max-width: 75%;
+  line-height: 40px;
+}
+
+.homeContainer hr{
+  width: 50%;
+}
+
+.home img{
+  max-width: 200px;
+  border-radius: 15px;
+}
+
+.main {
+  text-align: center;
+}
+
+.habilitys-container{
+  margin: 0;
+}
+
+.habilitys {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.habilitys div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 15px;
+  min-width: 200px;
+  background-color: rgb(243, 240, 235);
+
+}
+
+.habilitys div img{
+  max-width: 150px;
+  margin-bottom: 50px;
+}
+
+.outOrder {
+  max-width: 500px;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: rgb(75, 205, 205);
+}
+
+footer{
+  text-align: center;
 }
