@@ -5,6 +5,7 @@ import Habilidades from './pages/Habilidades';
 import Projetos from './pages/Projetos';
 import Home from './pages/Home';
 import NotFoud from './pages/NotFoud';
+import SendEmail from './pages/sendEmai';
 import Footer from './footer';
 import './App.css';
 
@@ -54,6 +55,7 @@ class App extends React.Component {
             <Routes>
               <Route path="/habilidades" element={ <Habilidades /> } />
               <Route path="/projetos" element={ <Projetos /> } />
+              <Route path='/sendEmail' element={ <SendEmail /> } />
               <Route exact path="/" element={ <Home /> } />
               <Route path="*" element={ <NotFoud /> } />
             </Routes>

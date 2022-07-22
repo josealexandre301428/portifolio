@@ -102,6 +102,30 @@ body {
   margin-bottom: 50px;
 }
 
+.emailForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.emailForm form{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  width: auto;
+  margin: 0 auto;
+}
+
+.inputForm{
+  margin:  10px 0 10px 0 ;
+}
+
 .outOrder {
   max-width: 500px;
   margin: 0 auto;
