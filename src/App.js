@@ -1,4 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
+import { DropdownToggle,UncontrolledDropdown, DropdownMenu, DropdownItem, Badge } from 'reactstrap';
 import { Route, Routes, Link } from 'react-router-dom';
 import React from 'react';
 import Habilidades from './pages/Habilidades';
@@ -11,44 +12,60 @@ import './App.css';
 
 class App extends React.Component {
   render() {
-    function MouseOver({target}) {
-      target.style.color="white";
-    }
-    function MouseOut({target}){
-      target.style.color="black";
-    }
     return (
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <section>
-          <div>
+          <div >
             <header className="header">
-              <h1 id="title">Meu Portfólio</h1>
               <div className="navi">
-              <Link
-                to="/"
-                style={{ textDecoration: 'none', color: 'black' }}
-                onMouseOver={MouseOver} 
-                onMouseOut={MouseOut}
-              >
-                Perfil
-              </Link>
-              <Link
-                to="/habilidades"
-                style={{ textDecoration: 'none', color: 'black' }}
-                onMouseOver={MouseOver} 
-                onMouseOut={MouseOut}
-              >
-                Habilidades
-              </Link>
-              <Link
-                to="/projetos"
-                style={{ textDecoration: 'none', color: 'black' }}
-                onMouseOver={MouseOver} 
-                onMouseOut={MouseOut}
-              >
-                Projetos
-              </Link>
+                <UncontrolledDropdown>
+                  <DropdownToggle 
+                  caret
+                  color="dark"
+                  >
+                    ≣
+                  </DropdownToggle>
+                  <DropdownMenu>
+                        <Link
+                          to="/"
+                        >
+                          <DropdownItem Perfil>
+                            <Badge
+                              className="text-dark"
+                              color="light"
+                            >
+                              Perfil
+                            </Badge>
+                          </DropdownItem>
+                        </Link>
+                        <Link
+                          to="/habilidades"
+                        >
+                          <DropdownItem Habilidades>
+                            <Badge
+                              className="text-dark"
+                              color="light"
+                            >
+                              Habilidades
+                            </Badge>
+                          </DropdownItem>
+                        </Link>
+                        <Link
+                          to="/projetos"
+                        >
+                          <DropdownItem Projetos>
+                            <Badge
+                              className="text-dark"
+                              color="light"
+                            >
+                              Projetos
+                            </Badge>
+                          </DropdownItem>
+                        </Link>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
               </div>
+              <h1 id="title">Meu Portfólio</h1>
             </header>
           </div>
           <main className='main'>

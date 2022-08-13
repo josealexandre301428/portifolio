@@ -1,33 +1,38 @@
 import React, { Component } from "react";
 import fundo from "../images/Fundo.png";
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 class sendEmail extends Component{
     render() {
         return(
-          <>
-           <main className="emailForm">
+          <main className="back">
+           <section className="emailForm">
               <h1>Entre em contato</h1>
-              <form action="mailto:jasspfilho@gmail.com" method="post" encType="text/plain">
-                <label>
-                  Nome<br/>
-                  <input className="inputForm" name="nome" type="text" required/>
-                </label>
-                <label>
-                  Email<br/>
-                  <input className="inputForm" name="email" type="text" required/>
-                </label>
-                <label>
-                  Sua menssagem<br/>
-                  <textarea className="inputForm" name="menssagem" type="text" required/>
-                </label>
-                <input className="inputForm" type="submit" value="Enviar" />
-                <input className="inputForm" type="reset" value="Limpar" />
-              </form>
+              <Form 
+                className="form"
+                action="mailto:jasspfilho@gmail.com"
+                method="post"
+                encType="text/plain"
+              >
+                <FormGroup colum  >
+                  <Label>
+                    Nome<br/>
+                    <Input bsSize="lg" className="inputForm" name="nome" type="text" required/>
+                  </Label>
+                  <Label>
+                    Email<br/>
+                    <Input bsSize="lg" className="inputForm" name="email" type="text" required/>
+                  </Label>
+                  <Label>
+                    Sua menssagem<br/>
+                    <Input bsSize="lg" className="inputForm" name="menssagem" type="textarea" required/>
+                  </Label>
+                  <Button type="submit" value="Enviar">Enviar</Button>
+                  <Button type="reset" value="Limpar">Limpar</Button>
+                </FormGroup>
+              </Form>
+           </section>
            </main>
-           <div className="fundo-div">
-                <img className="fundo" src={ fundo } alt="fundo" />
-           </div>
-           </>
         )
     }
 }
