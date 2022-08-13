@@ -6,47 +6,47 @@
 
 body {
   margin: 0;
-  background-color: rgb(212, 212, 212);
+  background-color: #E3EAF2;
   font-family:  'Open Sans Condensed', sans-serif;;
   font-size: 20px;
   box-sizing: border-box;
 }
+
 .header {
+  color: aliceblue;
   text-align: center;
-  border: 1px solid black;
-  color: rgb(255, 253, 253);
-  background-color: #293536;
+  border-top: 1px solid black;
+  background-image: linear-gradient(black, rgb(43, 43, 43), rgb(85, 84, 84), rgb(112, 111, 111), #E3EAF2);
   text-decoration: none;
 }
 
 .navi {
   padding: 5px;
-  background-color: #8BB4B5;
-  border-top: 1px solid black;
+
   display: flex;
   justify-content: space-around;
 }
 
 .home{
+  background-image: url("./images/Fundo.png");
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
 }
 
 .homeContainer{
+  position:relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
   max-width: 80%;
-  border: 2px solid #293536;
-  border-radius: 15px;
-  background-color: #8BB4B5;
-  color: 293536;
+ 
 }
 
 #fotoPrincipal {
+  margin-top: 50px;
   border: 2px solid #293536;
 }
 
@@ -65,17 +65,27 @@ body {
   border-radius: 15px;
 }
 
+.icones{
+  margin: 0 10px 0 10px ;
+}
+
+.info-container{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
 .main {
   text-align: center;
 }
 
 .habilitys-container{
-  margin: 0;
+  margin: 0;  
 }
 
 .habilitys {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   max-width: 80%;
   margin: 0 auto;
@@ -88,18 +98,18 @@ body {
   flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 50px;
   padding: 15px;
-  border: 2px solid black;
-  border-radius: 15px;
   min-width: 200px;
-  background-color: rgb(243, 240, 235);
 
 }
 
-.habilitys div img{
-  max-width: 150px;
-  margin-bottom: 50px;
+.habilitys div img {
+  width: 200px;
+}
+
+.certificado{
+  width: 800px;
+  margin: 0 auto;
 }
 
 .emailForm{
@@ -135,5 +145,9 @@ body {
 }
 
 footer{
+  margin: 0px auto;
+  padding: 5px;
+  color: white;
+  background-image: linear-gradient(#E3EAF2, rgb(85, 84, 84), black);
   text-align: center;
 }

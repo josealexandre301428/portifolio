@@ -26,34 +26,39 @@ class Home extends Component{
                 </div>
                 <div className="homeContainer">
                     <h2 className="contact">Informações de contato</h2>
-                    <a 
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://www.linkedin.com/in/jos%C3%A9-alexandre-da-silva-e-souza-pinto-filho/"
-                    style={{ textDecoration: 'none', color: 'black' }}
-                    onMouseOver={MouseOver} 
-                    onMouseOut={MouseOut}
-                    >
-                        <img  width= "50px" src={ logoLink } alt="linkedin logo" />
-                    </a>
-                    <a 
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://github.com/josealexandre301428"
-                    style={{ textDecoration: 'none', color: 'black' }}
-                    onMouseOver={MouseOver} 
-                    onMouseOut={MouseOut}
-                    >
-                        <img width= "50px" src={ logoGit } alt="linkedin logo" />
-                    </a>
-                    <Link
-                      to="/sendEmail"
-                      style={{ textDecoration: 'none', color: 'black' }}
-                      onMouseOver={MouseOver} 
-                      onMouseOut={MouseOut}
-                      >
-                         <img width= "50px" src={ logoEmail } alt="linkedin logo" />
-                      </Link>
+                   <div className="info-container">
+                        <a 
+                            className="icones"
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://www.linkedin.com/in/jos%C3%A9-alexandre-da-silva-e-souza-pinto-filho/"
+                            style={{ textDecoration: 'none', color: 'black' }}
+                            onMouseOver={MouseOver} 
+                            onMouseOut={MouseOut}
+                        >
+                            <img  width= "50px" src={ logoLink } alt="linkedin logo" />
+                        </a>
+                        <a 
+                            className="icones"
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://github.com/josealexandre301428"
+                            style={{ textDecoration: 'none', color: 'black' }}
+                            onMouseOver={MouseOver} 
+                            onMouseOut={MouseOut}
+                        >
+                            <img width= "50px" src={ logoGit } alt="linkedin logo" />
+                        </a>
+                        <Link
+                            className="icones"
+                            to="/sendEmail"
+                            style={{ textDecoration: 'none', color: 'black' }}
+                            onMouseOver={MouseOver} 
+                            onMouseOut={MouseOut}
+                        >
+                            <img width= "50px" src={ logoEmail } alt="linkedin logo" />
+                        </Link>
+                   </div>
                 </div>
             </section>
         )

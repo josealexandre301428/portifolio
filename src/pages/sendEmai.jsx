@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import fundo from "../images/Fundo.png";
 
 class sendEmail extends Component{
     render() {
         return(
+          <>
            <main className="emailForm">
               <h1>Entre em contato</h1>
               <form action="mailto:jasspfilho@gmail.com" method="post" encType="text/plain">
@@ -22,6 +24,10 @@ class sendEmail extends Component{
                 <input className="inputForm" type="reset" value="Limpar" />
               </form>
            </main>
+           <div className="fundo-div">
+                <img className="fundo" src={ fundo } alt="fundo" />
+           </div>
+           </>
         )
     }
 }

@@ -4,7 +4,7 @@ class Footer extends Component{
     render() {
         return(
             <footer>
-                <p>Todos os direitos reservados { String.fromCharCode(169) }</p>
+                <p>Desenvolvido por José Alexandre { String.fromCharCode(169) }</p>
             </footer>
         )
     }
