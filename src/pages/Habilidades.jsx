@@ -74,26 +74,27 @@ function Habilidades(args) {
   return (
     <main className='back'>
         <Carousel
-        className='carousel'
+        className='carousel position-relative '
         activeIndex={activeIndex}
         next={next}
         previous={previous}
         {...args}
         >
         <CarouselIndicators
+            className='slide bg-dark'
             items={items}
             activeIndex={activeIndex}
             onClickHandler={goToIndex}
         />
         {slides}
         <CarouselControl
-            className='indicadores bg-dark align-baseline h-25 mw-25  top-50 start-0 translate-middle-y rounded-circle'
+            className='indicadores'
             direction="prev"
             directionText="Previous"
-            onClickHandler={previous}
-        />
+            onClickHandler={previous} 
+        />   
         <CarouselControl
-         className=' indicadores bg-dark align-middle h-25 mw-25 top-50 end-0 translate-middle-y rounded-circle'
+         className=' indicadores'
             direction="next"
             directionText="Next"
             onClickHandler={next}

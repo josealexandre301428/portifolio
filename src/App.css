@@ -15,19 +15,13 @@ body {
 
 .carousel{
   padding-top:5%;
+  padding-bottom: 5%;
 }
 
 .header {
   padding: 20px;
   display: flex;
   flex-direction: column;
-}
-
-.indicadores{ 
-  margin-left: 20%;
-  margin-right: 20%;
-  max-height: 75px;
-  max-width: 75px;
 }
 
 .header h1 {
@@ -47,6 +41,7 @@ body {
   min-height:1000px;
   background-image: url('./images/Fundo-50.svg');;
   background-size:cover;
+  padding-bottom: 50px;
 
 }
 .home{
@@ -278,11 +273,6 @@ footer{
     border: 1px solid #293536;
   }
 
-  .certificado{
-  max-width: 50%;
-  margin: 0 auto;
-}
-
 .listSelos{
   display: flex;
   flex-wrap: wrap;
@@ -335,11 +325,6 @@ footer{
     width: 75%;
     border: 1px solid #293536;
   }
-
-  .certificado{
-  max-width: 50%;
-  margin: 0 auto;
-}
 
 .listSelos{
   display: flex;
