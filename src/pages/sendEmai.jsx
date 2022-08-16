@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import fundo from "../images/Fundo.png";
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 class sendEmail extends Component{
@@ -14,7 +13,7 @@ class sendEmail extends Component{
                 method="post"
                 encType="text/plain"
               >
-                <FormGroup colum  >
+                <FormGroup colum >
                   <Label>
                     Nome<br/>
                     <Input bsSize="lg" className="inputForm" name="nome" type="text" required/>
@@ -27,8 +26,8 @@ class sendEmail extends Component{
                     Sua menssagem<br/>
                     <Input bsSize="lg" className="inputForm" name="menssagem" type="textarea" required/>
                   </Label>
-                  <Button type="submit" value="Enviar">Enviar</Button>
-                  <Button type="reset" value="Limpar">Limpar</Button>
+                  <Button color="secondary" size="lg" style={{margin: "15px" }} type="submit" value="Enviar">Enviar</Button>
+                  <Button color="secondary" size="lg" style={{margin: "15px" }} type="reset" value="Limpar">Limpar</Button>
                 </FormGroup>
               </Form>
            </section>

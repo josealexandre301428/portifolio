@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import certificadoFundamentos from '../images/fundamentosCertificado.jpg';
 import certificadoFront from '../images/FrontCertificado.jpg';
-import html from '../images/fundamentos/html.svg';
-import css from '../images/fundamentos/css.svg';
-import git from '../images/fundamentos/git.svg';
-import javascript from '../images/fundamentos/javascript.svg';
-import jsES6 from '../images/fundamentos/jsES6.svg';
-import flexbox from '../images/fundamentos/flexbox.svg';
+import html from '../images/fundamentos/Html.svg';
+import css from '../images/fundamentos/Css.svg';
+import git from '../images/fundamentos/Git.svg';
+import javascript from '../images/fundamentos/JavaS.svg';
+import jsES6 from '../images/fundamentos/ES6.svg';
+import flexbox from '../images/fundamentos/FlexBox.svg';
 import bootstrap from '../images/fundamentos/Bootstrap.svg';
-import react from '../images/front/react.svg';
+import react from '../images/front/React.svg';
 import redux from '../images/front/Redux.svg';
-import hooks from '../images/front/hooks.svg';
+import hooks from '../images/front/ReactHooks.svg';
 import metodolgias from '../images/front/Metodologias.svg';
-import RTestLibrary from '../images/front/RTestLibrary.svg';
-import contextApi from '../images/front/contextApi.svg';
+import RTestLibrary from '../images/front/RTL.svg';
+import contextApi from '../images/front/ContextAPI.svg';
 
 import {
   Carousel,
@@ -61,13 +61,12 @@ function Habilidades(args) {
   const slides = items.map((item) => {
     return (
         <CarouselItem
-            className="custom-tag"
             tag="div"
             onExiting={() => setAnimating(true)}
             onExited={() => setAnimating(false)}
             key={item.src}
         >
-            <img src={item.src} alt={item.altText} width="600px" />
+          <img className='certificado' src={item.src} alt={item.altText} width="500px" />
         </CarouselItem>
     );
   });
@@ -75,6 +74,7 @@ function Habilidades(args) {
   return (
     <main className='back'>
         <Carousel
+        className='carousel'
         activeIndex={activeIndex}
         next={next}
         previous={previous}
@@ -87,12 +87,13 @@ function Habilidades(args) {
         />
         {slides}
         <CarouselControl
-           
+            className='indicadores bg-dark align-baseline h-25 mw-25  top-50 start-0 translate-middle-y rounded-circle'
             direction="prev"
             directionText="Previous"
             onClickHandler={previous}
         />
         <CarouselControl
+         className=' indicadores bg-dark align-middle h-25 mw-25 top-50 end-0 translate-middle-y rounded-circle'
             direction="next"
             directionText="Next"
             onClickHandler={next}

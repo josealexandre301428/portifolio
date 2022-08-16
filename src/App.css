@@ -3,6 +3,7 @@
 *{
   font-family: 'Advent Pro', sans-serif;
 }
+/* for desktop */
 
 body {
   margin: 0;
@@ -12,16 +13,27 @@ body {
   box-sizing:content-box;
 }
 
+.carousel{
+  padding-top:5%;
+}
+
 .header {
   padding: 20px;
   display: flex;
+}
+
+.indicadores{ 
+  margin-left: 20%;
+  margin-right: 20%;
+  max-height: 75px;
+  max-width: 75px;
 }
 
 .header h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin: 0 40% 0 40%;
+  margin: 0 auto;
 }
 
 .navi {
@@ -32,37 +44,32 @@ body {
 }
 
 .back{
-  min-height: 1000px;
-  background-image: url('./images/Fundo.png');
-  background-origin: border-box;
-  background-attachment: scroll;
-  background-position: center;
+  min-height:1000px;
+  background-image: url('./images/Fundo-50.svg');;
+  background-size:cover;
+
 }
 .home{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* .custom-tag {
-  padding: 25px;  
-  max-width: 100%;
-  height: 500px;
-  background-image: linear-gradient(#E3EAF2, black, #E3EAF2) ;
-  opacity: 0.9;
-} */
+
 
 .listSelos{
  display: flex;
  flex-wrap: wrap;
  flex-direction: row;
  justify-content: center;
+ padding-top: 50px ;
  margin: 0 auto;
- max-width: 60%;
+ max-width: 50%;
  
 }
 
 .selos{
-  max-width: 150px ;
+  max-width: 100px ;
+  margin: 5px 5px;
 }
 
 .homeContainer{
@@ -110,29 +117,9 @@ body {
   text-align: center;
 }
 
-.habilitys-container{
-  background-image: url('./images/Fundo.png');
-  background-position: center;
-  margin: 0;  
-}
 
-.habilitys {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-.habilitys div{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 0 auto;
-  padding: 15px;
-  min-width: 200px;
-
+.projetoMain{ 
+  padding-top: 50px;
 }
 
 .habilitys div img {
@@ -147,6 +134,7 @@ body {
 .emailForm{
   display: flex;
   flex-direction: column;
+  padding-top: 50px;
 }
 
 .form div {
@@ -170,10 +158,8 @@ body {
 
 .outOrder {
   max-width: 500px;
+  padding-top: 100px;
   margin: 0 auto;
-  border: 2px solid black;
-  border-radius: 15px;
-  background-color: #8BB4B5;
 }
 
 footer{
@@ -186,4 +172,189 @@ footer{
   color: white;
   background-color: black;
   text-align: center;
+}
+
+
+@media only screen and (max-width: 450px) {
+  /* For mobile phones: */
+  body {
+    margin: 0;
+    background-color: #E3EAF2;
+    font-family:  'Open Sans Condensed', sans-serif;;
+    font-size: 15px;
+    box-sizing:content-box;
+  }
+  .back{
+    background-image: url('./images/Fundo-50.svg');
+    background-position: center;
+  }
+
+  .homeContainer{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    max-width: 80%;
+    background-color: #E3EAF2;
+   
+  }
+
+  .homeContainer p{
+    max-width: 80%;
+    line-height: 40px;
+  }
+
+  .homeContainer hr{
+    width: 75%;
+    border: 1px solid #293536;
+  }
+
+  .certificado{
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.listSelos{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 50px ;
+  margin: 0 auto;
+  max-width: 50%;
+  
+ }
+ 
+ .selos{
+   max-width: 75px ;
+   margin: 5px 5px;
+ }
+
+ footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+}
+
+}
+
+@media only screen and (max-width: 800px) {
+
+  body {
+    margin: 0;
+    background-color: #E3EAF2;
+    font-family:  'Open Sans Condensed', sans-serif;;
+    font-size: 15px;
+    box-sizing:content-box;
+  }
+  .back{
+    background-image: url('./images/Fundo-50.svg');
+    background-position: center;
+  }
+
+  .homeContainer{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    max-width: 80%;
+    background-color: #E3EAF2;
+   
+  }
+
+  .homeContainer p{
+    max-width: 80%;
+    line-height: 40px;
+  }
+
+  .homeContainer hr{
+    width: 75%;
+    border: 1px solid #293536;
+  }
+
+  .certificado{
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.listSelos{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 50px ;
+  margin: 0 auto;
+  max-width: 50%;
+  
+ }
+ 
+ .selos{
+   max-width: 75px ;
+   margin: 5px 5px;
+ }
+  
+}
+
+@media only screen and (max-width: 1440px) {
+
+  body {
+    margin: 0;
+    background-color: #E3EAF2;
+    font-family:  'Open Sans Condensed', sans-serif;;
+    font-size: 15px;
+    box-sizing:content-box;
+  }
+  .back{
+    background-image: url('./images/Fundo-50.svg');
+    background-position: center;
+  }
+
+  .homeContainer{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    max-width: 80%;
+    background-color: #E3EAF2;
+   
+  }
+
+  .homeContainer p{
+    max-width: 80%;
+    line-height: 40px;
+  }
+
+  .homeContainer hr{
+    width: 75%;
+    border: 1px solid #293536;
+  }
+
+  .certificado{
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.listSelos{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 50px ;
+  margin: 0 auto;
+  max-width: 50%;
+  
+ }
+ 
+ .selos{
+   max-width: 75px ;
+   margin: 5px 5px;
+ }
+  
 }

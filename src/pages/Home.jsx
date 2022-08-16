@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
 import fotoJose from "../images/Foto-jose.png";
-import logoLink from "../images/linkedin-logo.png";
-import logoGit from "../images/github-logo.png";
-import logoEmail from "../images/email-logo.png";
+import logoLink from "../images//fundamentos/Linkedin.svg";
+import logoGit from "../images/fundamentos/GitHub.svg";
+import logoEmail from "../images/fundamentos/Email.svg";
 import { Link } from "react-router-dom";
 
 class Home extends Component{

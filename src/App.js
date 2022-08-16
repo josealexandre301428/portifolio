@@ -16,7 +16,7 @@ class App extends React.Component {
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <section>
           <div >
-            <header className="header">
+            <header className="header shadow-lg">
               <div className="navi">
                 <UncontrolledDropdown>
                   <DropdownToggle 
@@ -65,7 +65,7 @@ class App extends React.Component {
                   </DropdownMenu>
                 </UncontrolledDropdown>
               </div>
-              <h1 id="title">Meu Portfólio</h1>
+              <h1 id="title">Desenvolvedor Front End</h1>
             </header>
           </div>
           <main className='main'>
