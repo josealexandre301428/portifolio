@@ -20,6 +20,7 @@ body {
 .header {
   padding: 20px;
   display: flex;
+  flex-direction: column;
 }
 
 .indicadores{ 
@@ -38,7 +39,6 @@ body {
 
 .navi {
   padding: 5px;
-
   display: flex;
   justify-content: space-around;
 }

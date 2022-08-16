@@ -1,18 +1,24 @@
-import React, { Component } from "react";
+import React from "react";
+import { useLocation } from "react-router-dom";
 
-class Projetos extends Component{
-    render() {
+
+function semBarras(page) {
+    return page.replace(/[\W_]+/g,' ');
+}
+
+function Projetos (){
+const page = useLocation();
+const title = semBarras(page.pathname); 
         return(
         <main className="back">
         <div className="projetoMain">
-            <h1>Projetos</h1>
+            <h1>{title}</h1>
             <div className="outOrder">
                 <p>Em Desenvolvimento!</p>
             </div>
         </div>
         </main>
         )
-    }
 }
 
 export default Projetos;
