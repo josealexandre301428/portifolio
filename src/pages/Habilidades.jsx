@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import certificadoFundamentos from '../images/fundamentosCertificado.jpg';
-import certificadoFront from '../images/FrontCertificado.jpg';
+import certificadoFundamentos from '../images/certificado/fundamentosCertificado.jpg';
+import certificadoFront from '../images/certificado/FrontCertificado.jpg';
 import html from '../images/fundamentos/Html.svg';
 import css from '../images/fundamentos/Css.svg';
 import git from '../images/fundamentos/Git.svg';

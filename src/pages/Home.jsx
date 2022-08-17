@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import fotoJose from "../images/Foto-jose.png";
+import fotoJose from "../images/fotos/Foto-jose.png";
 import logoLink from "../images//fundamentos/Linkedin.svg";
 import logoGit from "../images/fundamentos/GitHub.svg";
 import logoEmail from "../images/fundamentos/Email.svg";
