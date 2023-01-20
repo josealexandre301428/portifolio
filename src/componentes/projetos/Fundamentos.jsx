@@ -37,7 +37,7 @@ function Fundamentos (){
                         >
                           Html, Css, JavaScript
                         </CardSubtitle>
-                        <CardText>
+                        <CardText className="textContent">
                           Meu primeiro projeto, nele aprendi a criar uma aplicaçao web utilizando Html, Css e JavaScript.
                         </CardText>
                         <Button>
@@ -68,7 +68,7 @@ function Fundamentos (){
                         >
                           Html, Css, JavaScript
                         </CardSubtitle>
-                        <CardText>
+                        <CardText className="textContent">
                         Neste projeto desenvolvi uma lista de tarefas usando HTML, CSS e JavaScript
                         </CardText>
                         <Button>
@@ -99,7 +99,7 @@ function Fundamentos (){
                         >
                           Html, Css, JavaScript
                         </CardSubtitle>
-                        <CardText>
+                        <CardText className="textContent">
                           Neste projeto utilizei variáveis e tipos primitivos em JavaScript, Utilizei tambem conceitos da linguagem como a tipagem dinâmica e operadores lógicos/aritméticos/de atribuição em meu código. 
                         </CardText>
                         <Button>

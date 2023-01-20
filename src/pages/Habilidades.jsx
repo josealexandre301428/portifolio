@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import certificadoFundamentos from '../images/certificado/fundamentosCertificado.jpg';
 import certificadoFront from '../images/certificado/FrontCertificado.jpg';
+import certificadoBack from '../images/certificado/backCertificado.jpg'
 import html from '../images/fundamentos/Html.svg';
 import css from '../images/fundamentos/Css.svg';
 import git from '../images/fundamentos/Git.svg';
@@ -33,6 +34,12 @@ const items = [
     src: certificadoFront,
     altText: 'Certificado Front',
     caption: 'Certificado Front',
+    key: 2,
+  },
+  {
+    src: certificadoBack,
+    altText: 'Certificado Back',
+    caption: 'Certificado Back',
     key: 2,
   },
 ];

@@ -123,6 +123,9 @@ body {
   justify-content: center;
 }
 
+.textContent{
+  overflow: scroll;
+}
 
 .habilitys div img {
   width: 200px;
@@ -159,7 +162,7 @@ body {
 }
 
 .outOrder {
-  max-width: 500px;
+  max-width: 1000px;
   padding-top: 100px;
   margin: 0 auto;
 }
